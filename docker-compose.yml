@@ -1,0 +1,10 @@
+version: '2'
+services:
+  frontend-ico-dashboard:
+    image: jincort/starflow-ico-dashboard:production
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+       - "8080:80"
+    tty: true

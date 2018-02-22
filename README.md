@@ -1,6 +1,6 @@
 # Starflow Investor Dashboard Frontend
 
-[![Build Status](https://travis-ci.com/JincorTech/frontend-supreme-happiness.svg?token=zhVTspsPSE9j1Tuwzqe2&branch=develop)](https://travis-ci.com/JincorTech/frontend-supreme-happiness)
+[![Build Status](https://travis-ci.com/JincorTech/starflow-frontend-ico-dashboard.svg?token=zhVTspsPSE9j1Tuwzqe2&branch=master)](https://travis-ci.com/JincorTech/starflow-frontend-ico-dashboard)
 
 ### Scripts
 
