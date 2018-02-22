@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-Book.eot');
+	src: url('./CircularStd/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-Book.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-Book.woff') format('woff'),
+		url('./CircularStd/CircularStd-Book.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-BookItalic.eot');
+	src: url('./CircularStd/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-BookItalic.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-BookItalic.woff') format('woff'),
+		url('./CircularStd/CircularStd-BookItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-MediumItalic.eot');
+	src: url('./CircularStd/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-MediumItalic.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-MediumItalic.woff') format('woff'),
+		url('./CircularStd/CircularStd-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-Medium.eot');
+	src: url('./CircularStd/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-Medium.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-Medium.woff') format('woff'),
+		url('./CircularStd/CircularStd-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-BoldItalic.eot');
+	src: url('./CircularStd/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-BoldItalic.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-BoldItalic.woff') format('woff'),
+		url('./CircularStd/CircularStd-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-Bold.eot');
+	src: url('./CircularStd/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-Bold.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-Bold.woff') format('woff'),
+		url('./CircularStd/CircularStd-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-Black.eot');
+	src: url('./CircularStd/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-Black.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-Black.woff') format('woff'),
+		url('./CircularStd/CircularStd-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	src: url('./CircularStd/CircularStd-BlackItalic.eot');
+	src: url('./CircularStd/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('./CircularStd/CircularStd-BlackItalic.woff2') format('woff2'),
+		url('./CircularStd/CircularStd-BlackItalic.woff') format('woff'),
+		url('./CircularStd/CircularStd-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}

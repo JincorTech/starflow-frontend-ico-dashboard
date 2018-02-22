@@ -1,0 +1,27 @@
+@use postcss-short;
+@use postcss-clearfix;
+
+.table {
+  width: 98%;
+  height: 100%;
+}
+
+.row {
+  background: rgb(255,255,255,0.02);
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.cell {
+  padding: 10px;
+  margin: 1px;
+  display: inline-block;
+  width: 150px;
+  color: rgba(255,255,255,0.85);
+}
+.email {
+  color: rgba(255,255,255,0.55);
+}
+.verified {
+  color: rgba(0,200,0,0.55); 
+}

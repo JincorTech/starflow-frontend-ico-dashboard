@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #1E1E1E;
+  position: relative;
+}
+
+.form {
+  width: 380px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 40px);
+    padding: 30px 0;
+  }
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+
+  & > img {
+    width: 250px;
+    /*height: 36px;*/
+  }
+}
+
+.body {
+  padding: 40px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(36, 36, 36, 0.75);
+  box-shadow: 0 3px 38px 0 rgba(0, 0, 0, 0.25);
+}

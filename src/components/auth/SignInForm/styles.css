@@ -1,0 +1,48 @@
+.title {
+  font-family: CircularStd;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 34px rgba(0, 0, 0, 0.5);
+}
+
+.subTitle {
+  font-family: CircularStd;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #797878;
+  text-shadow: 0 2px 34px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+.error {
+  font: normal 15px CircularStd;
+  text-align: center;
+  color: #ff001f;
+  margin-bottom: 30px;
+}
+
+.password {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.field {
+  margin: 15px 0;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font: normal 15px CircularStd;
+}

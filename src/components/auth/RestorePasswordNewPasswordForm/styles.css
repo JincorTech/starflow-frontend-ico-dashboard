@@ -1,0 +1,31 @@
+.title {
+  font-family: CircularStd;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -.5px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 34px rgba(0,0,0,.5);
+    margin-bottom: 40px;
+}
+
+.field {
+  margin: 15px 0;
+}
+
+.description {
+  font: normal 16px/24px CircularStd;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6e7987;
+}
+
+.error {
+  font: normal 15px CircularStd;
+  text-align: center;
+  color: #ff001f;
+  margin-bottom: 30px;
+}
