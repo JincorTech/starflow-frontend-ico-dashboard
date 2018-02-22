@@ -120,10 +120,10 @@ class BuyTokensForm extends Component {
           <div className={s.field}>
             <Field
               component={RenderInput}
-              tip="JCR"
+              tip="STAR"
               size="large"
               name="jcr"
-              placeholder="0 JCR"
+              placeholder="0 STAR"
               disabled/>
           </div>
 

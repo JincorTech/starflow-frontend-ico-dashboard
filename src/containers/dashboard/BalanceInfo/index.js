@@ -73,7 +73,7 @@ class BalanceInfo extends Component {
         </div>
 
         <div className={s.block}>
-          <div className={s.val}>{bigNum(dashboard.jcrTokensSold, 0)} JCR</div>
+          <div className={s.val}>{bigNum(dashboard.jcrTokensSold, 0)} STAR</div>
           <div className={s.label}>Tokens sold</div>
         </div>
 

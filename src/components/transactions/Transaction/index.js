@@ -38,11 +38,11 @@ const Transaction = (props) => {
     }
 
     if (type === 'jcr_transfer' && direction === 'in') {
-      return (<div className={s.name}>STAR Tokens received (+ {jcrAmount} JCR)</div>);
+      return (<div className={s.name}>STAR Tokens received (+ {jcrAmount} STAR)</div>);
     }
 
     if (type === 'jcr_transfer' && direction === 'out') {
-      return (<div className={s.name}>STAR Tokens sent (- {jcrAmount} JCR)</div>);
+      return (<div className={s.name}>STAR Tokens sent (- {jcrAmount} STAR)</div>);
     }
 
     return (<div>error</div>);

@@ -24,7 +24,7 @@ const User = (props) => {
           <a href={`https://etherscan.io/address/${walletAddress}`} target="_blank">{shortAddress(walletAddress)}</a>
         </div>
       </div>
-      <div className={s.tokens}>{tokens} JCR</div>
+      <div className={s.tokens}>{tokens} STAR</div>
     </div>
   );
 };
