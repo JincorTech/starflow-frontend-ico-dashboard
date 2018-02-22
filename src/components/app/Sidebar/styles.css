@@ -1,7 +1,7 @@
 @use postcss-short;
 
 .sidebar {
-  background-color: #232323;
+  background-color: #000;
   position: relative;
   height: 100%;
 }
@@ -28,17 +28,17 @@
   display: block;
   margin: 20px 0;
   font: normal 16px CircularStd;
-  color: #6e7987;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   transition: 0.1s linear all;
 
   &:hover {
-    color: #0080ff;
+    color: #f52c5a;
   }
 
   &.active {
-    color: #0080ff;
+    color: #f52c5a;
     font: bold 16px CircularStd;
 
     &:hover {
@@ -50,7 +50,7 @@
 
 .activeLink {
   composes: link;
-  color: #0080ff;
+  color: #f52c5a;
   font: bold 16px CircularStd;
 
   &:hover {
@@ -62,7 +62,7 @@
 .disabled {
   composes: link;
   pointer-events: none;
-  color: #ababab;
+  color: #808080;
 }
 
 .socials {

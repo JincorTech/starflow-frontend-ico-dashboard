@@ -9,7 +9,7 @@
     <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Sign-Up-(Filled)" transform="translate(-585.000000, -518.000000)">
             <g id="Check-On" transform="translate(585.000000, 518.000000)">
-                <rect id="Rectangle" fill="#0080FF" fill-rule="evenodd" x="0" y="0" width="20" height="20" rx="4"></rect>
+                <rect id="Rectangle" fill="#f52c5a" fill-rule="evenodd" x="0" y="0" width="20" height="20" rx="4"></rect>
                 <g id="Back-arrow" stroke-linejoin="round">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <path stroke="#FFFFFF" stroke-width="0.4" d="M9.06989274,11.5545438 L13.393469,7.21784287 L14.2835113,8.0966257 L9.06959062,13.3276634 L5.71663032,9.95702387 L6.60669272,9.07822116 L9.06989274,11.5545438 Z"></path>

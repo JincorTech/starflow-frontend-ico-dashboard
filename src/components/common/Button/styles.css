@@ -6,15 +6,16 @@
   width: 100%;
   font: 500 15px CircularStd;
   color: #fff;
-  background-color: #B1A06D;
+  background-color: #f52c5a;
   border: none;
   border-radius: 4px;
   padding: 11px;
 
   &:disabled {
-    background-color: #dbdfe4;
+    background-color: #4a4a4a;
     pointer-events: none;
     cursor: dont-allow;
+    color: #848484;
   }
 
   &.small {
@@ -24,7 +25,7 @@
 
   &.secondary {
     background-color: #fff;
-    color: #0080ff;
-    border: 1px solid #0080ff;
+    color: #f52c5a;
+    border: 1px solid #f52c5a;
   }
 }

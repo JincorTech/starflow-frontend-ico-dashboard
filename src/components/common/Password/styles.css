@@ -7,7 +7,7 @@
 .password {
   font: normal 15px CircularStd;
   padding: 15px;
-  border: 1px solid #B1A06D;
+  border: 1px solid #f52c5a;
   border-radius: 4px;
   outline: none;
   width: 100%;
@@ -15,7 +15,7 @@
   transition: 0.1s linear all;
 
   &:focus {
-    border: 1px solid #0080ff;
+    border: 1px solid #f52c5a;
   }
 }
 

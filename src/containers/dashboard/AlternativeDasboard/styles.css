@@ -89,7 +89,7 @@
   z-index: 1;
   font: 500 13px CircularStd;
   color: #fff;
-  background-color: #0080ff;
+  background-color: #f52c5a;
   padding: 4px 9px;
   border-radius: 4px;
 }
@@ -132,8 +132,8 @@
   & > a {
     display: block;
     text-align: center;
-    border: 1px solid #0080ff;
-    color: #0080ff;
+    border: 1px solid #f52c5a;
+    color: #f52c5a;
     padding: 8px;
     border-radius: 4px;
     outline: none;

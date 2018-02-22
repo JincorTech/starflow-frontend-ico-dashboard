@@ -92,7 +92,7 @@ class Verification extends Component {
     const renderPlugin = () => (
       <div id="jumio">
         <div className={s.spinner}>
-          <Spinner color="#0080ff"/>
+          <Spinner color="#f52c5a"/>
         </div>
       </div>
     );

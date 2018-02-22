@@ -33,7 +33,7 @@ const NotificationsComponent = (props) => {
       },
 
       info: {
-        backgroundColor: '#0080FF'
+        backgroundColor: '#f52c5a'
       }
     }
   };

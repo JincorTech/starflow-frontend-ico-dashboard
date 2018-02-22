@@ -1,7 +1,8 @@
 .input {
   font: normal 15px CircularStd;
   padding: 15px;
-  border: 1px solid #dbdfe4;
+  border: 1px solid #414141;
+  background-color: #2b2a2a;
   border-radius: 4px;
   outline: none;
   width: 100%;
@@ -9,7 +10,7 @@
   transition: 0.1s linear all;
 
   &:focus {
-    border: 1px solid #B1A06D;
+    border: 1px solid #f52c5a;
   }
 
   &.large {

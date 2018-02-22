@@ -13,7 +13,7 @@
   float: left;
   padding: 40px 40px 20px;
   box-sizing: border-box;
-  background-color: #232323;
+  background-color: #000;
 
   @media only screen and (max-width: 480px) {
     width: 100%;
@@ -40,7 +40,7 @@
   padding: 0 40px 50px;
   box-sizing: border-box;
   overflow-y: scroll;
-  background-color: #1E1E1E;
+  background-color: #171717;
 
   @media only screen and (max-width: 480px) {
     width: 100%;
