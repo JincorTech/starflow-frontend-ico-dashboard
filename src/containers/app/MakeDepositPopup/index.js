@@ -42,6 +42,7 @@ class MakeDepositPopup extends Component {
 
           <Field
             disabled
+            bright
             component={RenderInput}
             name="ethAddress"
             type="text"/>

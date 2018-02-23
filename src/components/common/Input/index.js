@@ -10,6 +10,7 @@ const Input = (props) => {
     size,
     tip,
     meta,
+    bright,
     ...restProps
   } = props;
 
@@ -28,7 +29,8 @@ const Input = (props) => {
   const className = cx(
     s.input,
     getSize(size),
-    tip ? s.withTip : null
+    tip ? s.withTip : null,
+    bright ? s.bright : null
   );
 
   return (

@@ -19,6 +19,12 @@
     padding: 17px 20px;
   }
 
+  &.bright {
+    background-color: #fff;
+    border: 1px solid #dbdfe4;
+    color: #000;
+  }
+
   &.withTip {
     padding: 15px 100px 15px 15px;
   }
