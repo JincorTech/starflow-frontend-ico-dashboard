@@ -18,6 +18,15 @@
     color: #848484;
   }
 
+  &.bright {
+    &:disabled {
+      background-color: #dbdfe4;
+      pointer-events: none;
+      cursor: dont-allow;
+      color: #fff;
+    }
+  }
+
   &.small {
     font: normal 14px CircularStd;
     padding: 8px;

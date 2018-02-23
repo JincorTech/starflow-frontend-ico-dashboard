@@ -15,6 +15,7 @@ const Button = (props) => {
     styl,
     href,
     to,
+    bright,
     ...restProps
   } = props;
 
@@ -39,7 +40,8 @@ const Button = (props) => {
   const className = cx(
     s.button,
     getSize(size),
-    getStyle(styl)
+    getStyle(styl),
+    bright ? s.bright : null
   );
 
   const renderElement = () => {
