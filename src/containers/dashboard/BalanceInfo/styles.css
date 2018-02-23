@@ -6,17 +6,17 @@
 
 .block {
   padding: 15px 0;
-  border-bottom: 1px solid #e6e8eb;
+  border-bottom: 1px solid #414141;
 }
 
 .val {
   font: normal 32px CircularStd;
-  color: #fff;
+  color: #6e7987;
 }
 
 .label {
   font: normal 16px CircularStd;
-  color: #fff;
+  color: #6e7987;
   margin-top: 5px;
 }
 
