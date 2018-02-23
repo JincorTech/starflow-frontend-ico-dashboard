@@ -1,11 +1,11 @@
 .block {
   padding: 15px 0;
-  border-bottom: 1px solid #e6e8eb;
+  border-bottom: 1px solid #414141;
 }
 
 .qty {
   font: normal 32px CircularStd;
-  color: #222;
+  color: #d5e7ff;
 }
 
 .label {

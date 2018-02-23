@@ -2,7 +2,7 @@
 
 .transaction {
   padding: 25px 0;
-  border-bottom: 1px solid #e6e8eb;
+  border-bottom: 1px solid #414141;
 }
 
 .date {
@@ -12,7 +12,7 @@
 
 .name {
   font: normal 26px/36px CircularStd;
-  color: #222;
+  color: #d5e7ff;
   margin-top: 10px;
 }
 

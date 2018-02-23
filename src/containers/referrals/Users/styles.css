@@ -5,7 +5,7 @@
 }
 
 .tabs {
-  border-bottom: 1px solid #e6e8eb;
+  border-bottom: 1px solid #414141;
   margin: 0 -12px;
 }
 
@@ -24,7 +24,7 @@
 
 .active {
   composes: tab;
-  color: #222;
+  color: #d5e7ff;
   pointer-events: none;
   border-bottom: 1px solid #222;
 }
