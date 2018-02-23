@@ -43,6 +43,7 @@ class MnemonicPopup extends Component {
             <div className={s.field}>
               <Field
                 component={RenderPassword}
+                bright
                 name="mnemonic"
                 placeholder="Mnemonic phrase"
                 validate={required}/>
@@ -50,11 +51,12 @@ class MnemonicPopup extends Component {
 
             <Field
               component={RenderInput}
+              bright
               name="ethAmount"
               type="hidden"/>
 
             <div className={s.button}>
-              <Button type="submit" spinner={spinner} disabled={invalid}>Send</Button>
+              <Button type="submit" bright spinner={spinner} disabled={invalid}>Send</Button>
             </div>
           </form>
         </div>

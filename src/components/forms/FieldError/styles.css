@@ -11,7 +11,7 @@
   transform: translateX(50%);
   max-width: 100%;
   border-radius: 4px;
-  background: #222;
+  background: #4a4a4a;
   font: normal 12px CircularStd;
   color: #fff;
   text-align: center;
@@ -24,6 +24,6 @@
     transform: translateX(50%);
     size: 0;
     border: 6px solid;
-    border-color: #222 transparent transparent;
+    border-color: #4a4a4a transparent transparent;
   }
 }
