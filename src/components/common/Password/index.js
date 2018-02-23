@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import classNames from 'classnames/bind';
 import s from './styles.css';
+
+const cx = classNames.bind(s);
 
 class Password extends Component {
   constructor(props) {
@@ -17,19 +20,26 @@ class Password extends Component {
   }
 
   render() {
-    const { invalid, valid, ...restProps } = this.props;
+    const {
+      invalid, valid, bright, ...restProps
+    } = this.props;
     const { visible } = this.state;
 
-    const className = () => {
+    const getMainStyle = () => {
       if (invalid) return s.invalid;
       if (valid) return s.valid;
 
       return s.password;
     };
 
+    const className = cx(
+      getMainStyle(),
+      bright ? s.bright : null
+    );
+
     return (
       <div className={s.wrap}>
-        <input className={className()} {...restProps} type={visible ? 'text' : 'password'}/>
+        <input className={className} {...restProps} type={visible ? 'text' : 'password'}/>
         <img className={visible ? s.active : s.eye} src={require('./images/eye.svg')} onClick={this._handleClick}/>
       </div>
     );

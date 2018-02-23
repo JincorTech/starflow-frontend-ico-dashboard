@@ -5,6 +5,8 @@
 }
 
 .password {
+  background-color: #2c2a2a;
+  color: #fff;
   font: normal 15px CircularStd;
   padding: 15px;
   border: 1px solid #f52c5a;
@@ -13,6 +15,11 @@
   width: 100%;
   box-sizing: border-box;
   transition: 0.1s linear all;
+
+  &.bright {
+    background-color: #fff;
+    color: #000;
+  }
 
   &:focus {
     border: 1px solid #f52c5a;
