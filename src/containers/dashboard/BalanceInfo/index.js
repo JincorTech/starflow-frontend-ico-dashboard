@@ -65,10 +65,7 @@ class BalanceInfo extends Component {
             Per STAR Token in&nbsp;
             <button
               onClick={() => this.setState({ rate: 'eth' })}
-              className={rate === 'eth' ? s.activeCurrencyButton : s.currencybutton}>ETH</button>&nbsp;•&nbsp;
-            <button
-              onClick={() => this.setState({ rate: 'usd' })}
-              className={rate === 'usd' ? s.activeCurrencyButton : s.currencybutton}>USD</button>
+              className={rate === 'eth' ? s.activeCurrencyButton : s.currencybutton}>ETH</button>
           </div>
         </div>
 
@@ -83,10 +80,7 @@ class BalanceInfo extends Component {
             Raised in&nbsp;
             <button
               onClick={() => this.setState({ raised: 'eth' })}
-              className={raised === 'eth' ? s.activeCurrencyButton : s.currencybutton}>ETH</button>&nbsp;•&nbsp;
-            <button
-              onClick={() => this.setState({ raised: 'usd' })}
-              className={raised === 'usd' ? s.activeCurrencyButton : s.currencybutton}>USD</button>
+              className={raised === 'eth' ? s.activeCurrencyButton : s.currencybutton}>ETH</button>
           </div>
         </div>
 
