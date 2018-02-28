@@ -18,7 +18,7 @@ const BuyTokensForm = (props) => {
             component={RenderInput}
             size="large"
             name="amount"
-            placeholder="0 STAR Tokens"/>
+            placeholder="0 STR Tokens"/>
         </div>
 
         <div className={s.field}>

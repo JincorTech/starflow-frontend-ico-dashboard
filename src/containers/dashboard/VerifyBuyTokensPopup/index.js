@@ -49,7 +49,7 @@ class VerifyBuyTokensPopup extends Component {
 
     return (
       <Popup
-        title="Verify STAR Purchase"
+        title="Verify STR Purchase"
         open={open}
         close={() => closeVerifyPopup()}>
 

@@ -15,7 +15,7 @@ const BalanceInfo = (props) => {
 
       <div className={s.block}>
         <div className={s.val}>{bigNum(123949, 2)}</div>
-        <div className={s.label}>STAR Token balance</div>
+        <div className={s.label}>STR Token balance</div>
       </div>
     </div>
   );
