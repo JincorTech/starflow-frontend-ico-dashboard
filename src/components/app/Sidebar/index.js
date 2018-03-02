@@ -28,21 +28,15 @@ const Sidebar = (props) => {
 
         <Link
           onClick={() => closeSidebar()}
-          className={s.disabled}
+          className={s.link}
           activeClassName={s.active}
           to={namedRoutes.transactions}>Transactions</Link>
 
         <Link
           onClick={() => closeSidebar()}
-          className={s.disabled}
+          className={s.link}
           activeClassName={s.active}
           to={namedRoutes.referrals}>Partner Program</Link>
-
-        <Link
-          onClick={() => closeSidebar()}
-          className={s.disabled}
-          activeClassName={s.active}
-          to={namedRoutes.sendTokens}>Send Tokens</Link>
 
         <Link
           onClick={() => closeSidebar()}
