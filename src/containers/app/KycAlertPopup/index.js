@@ -22,7 +22,9 @@ const KycAlertPopup = (props) => {
           To buy tokens you need to verify your account. It takes a few minutes.
         </div>
         <div className={s.button}>
-          <Button onClick={() => closeKycAlertPopup()} to={namedRoutes.verification}>Verify</Button>
+          <Button onClick={() => closeKycAlertPopup()} href={namedRoutes.verification}>
+            Verify
+          </Button>
         </div>
       </div>
     </Popup>
