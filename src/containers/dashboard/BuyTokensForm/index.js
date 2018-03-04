@@ -155,7 +155,7 @@ class BuyTokensForm extends Component {
           <p>
             Enter the amount of ETH you want to contribute and find out the
             amount of STAR tokens you will get.
-            Please note that a little bit ETH adding on top to cover the gas fee.<br/>
+            Please note a little bit of ETH should be added on top to cover the gas fee.<br/>
             <a onClick={() => openTxFeeHelp()}>What is the gas fee?</a>
           </p>
         </div>
