@@ -26,7 +26,7 @@ class Address extends Component {
         All you have to do is to tell
         your contacts about Starflow and invite them to participate in the ICO using the
         unique link below.<br/><br/>
-        This program is valid for coPleasentributions starting from 0.5 ETH.<br/><br/>
+        This program is valid for contributions starting from 0.5 ETH.<br/><br/>
         For more details, please email us directly at <a href="mailto:ico@starflow.com">ico@starflow.com</a> using the subject
         line "Starflow’s Partner Program"
         </div>
