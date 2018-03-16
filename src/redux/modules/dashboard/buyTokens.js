@@ -1,5 +1,9 @@
 import { from } from 'seamless-immutable';
-import { createReducer, createAction, createSubmitAction } from '../../../utils/actions';
+import {
+  createReducer,
+  createAction,
+  createSubmitAction,
+} from '../../../utils/actions';
 
 export const CHANGE_ETH = 'dashboard/buyTokens/CHANGE_ETH';
 export const SET_ETH = 'dashboard/buyTokens/SET_ETH';
@@ -8,6 +12,11 @@ export const SET_JCR = 'dashboard/buyTokens/SET_JCR';
 export const INITIATE_BUY_TOKENS = 'dashboard/buyTokens/INITIATE_BUY_TOKENS';
 export const OPEN_MNEMONIC_POPUP = 'dashboard/buyTokens/OPEN_MNEMONIC_POPUP';
 export const CLOSE_MNEMONIC_POPUP = 'dashboard/buyTokens/CLOSE_MNEMONIC_POPUP';
+export const OPEN_TERMS_POPUP = 'dashboard/buyTokens/OPEN_TERMS_POPUP';
+export const CLOSE_TERMS_POPUP = 'dashboard/buyTokens/CLOSE_TERMS_POPUP';
+export const OPEN_ORDER_FORM_POPUP = 'dashboard/buyTokens/OPEN_ORDER_FORM_POPUP';
+export const CLOSE_ORDER_FORM_POPUP =
+  'dashboard/buyTokens/CLOSE_ORDER_FORM_POPUP';
 export const SET_MNEMONIC = 'dashboard/buyTokens/SET_MNEMONIC';
 export const SET_ETH_AMOUNT = 'dashboard/buyTokens/SET_ETH_AMOUNT';
 export const OPEN_VERIFY_POPUP = 'dashboard/buyTokens/OPEN_VERIFY_POPUP';
@@ -21,6 +30,10 @@ export const changeJcr = createAction(CHANGE_JCR);
 export const setJcr = createAction(SET_JCR);
 export const openMnemonicPopup = createAction(OPEN_MNEMONIC_POPUP);
 export const closeMnemonicPopup = createAction(CLOSE_MNEMONIC_POPUP);
+export const openTermsPopup = createAction(OPEN_TERMS_POPUP);
+export const closeTermsPopup = createAction(CLOSE_TERMS_POPUP);
+export const openOrderFormPopup = createAction(OPEN_ORDER_FORM_POPUP);
+export const closeOrderFormPopup = createAction(CLOSE_ORDER_FORM_POPUP);
 export const setMnemonic = createAction(SET_MNEMONIC);
 export const setEthAmount = createAction(SET_ETH_AMOUNT);
 export const initiateBuyTokens = createSubmitAction(INITIATE_BUY_TOKENS);
@@ -35,6 +48,8 @@ const initialState = from({
   eth: '',
   verifyPopupOpen: false,
   mnemonicPopupOpen: false,
+  termsPopupOpen: false,
+  orderFormPopupOpen: false,
   mnemonic: '',
   ethAmount: '',
   verification: {
@@ -42,99 +57,106 @@ const initialState = from({
     consumer: '',
     expiredOn: 0,
     status: 0,
-    method: 'email'
-  }
+    method: 'email',
+  },
 });
 
-export default createReducer({
-  [SET_ETH]: (state, { payload }) => (
-    state.merge({
-      eth: payload
-    })
-  ),
+export default createReducer(
+  {
+    [SET_ETH]: (state, { payload }) =>
+      state.merge({
+        eth: payload,
+      }),
 
-  [SET_JCR]: (state, { payload }) => (
-    state.merge({
-      jcr: payload
-    })
-  ),
+    [SET_JCR]: (state, { payload }) =>
+      state.merge({
+        jcr: payload,
+      }),
 
-  [initiateBuyTokens.REQUEST]: (state) => (
-    state.merge({
-      spinner: true
-    })
-  ),
+    [initiateBuyTokens.REQUEST]: (state) =>
+      state.merge({
+        spinner: true,
+      }),
 
-  [initiateBuyTokens.SUCCESS]: (state, { payload }) => (
-    state.merge({
-      spinner: false,
-      verification: payload,
-      verifyPopupOpen: true
-    })
-  ),
+    [initiateBuyTokens.SUCCESS]: (state, { payload }) =>
+      state.merge({
+        spinner: false,
+        verification: payload,
+        verifyPopupOpen: true,
+      }),
 
-  [initiateBuyTokens.FAILURE]: (state) => (
-    state.merge({
-      spinner: false
-    })
-  ),
+    [initiateBuyTokens.FAILURE]: (state) =>
+      state.merge({
+        spinner: false,
+      }),
 
-  [OPEN_MNEMONIC_POPUP]: (state) => (
-    state.merge({
-      mnemonicPopupOpen: true
-    })
-  ),
+    [OPEN_MNEMONIC_POPUP]: (state) =>
+      state.merge({
+        mnemonicPopupOpen: true,
+      }),
 
-  [CLOSE_MNEMONIC_POPUP]: (state) => (
-    state.merge({
-      mnemonicPopupOpen: false
-    })
-  ),
+    [CLOSE_MNEMONIC_POPUP]: (state) =>
+      state.merge({
+        mnemonicPopupOpen: false,
+      }),
 
-  [SET_MNEMONIC]: (state, { payload }) => (
-    state.merge({
-      mnemonic: payload
-    })
-  ),
+    [SET_MNEMONIC]: (state, { payload }) =>
+      state.merge({
+        mnemonic: payload,
+      }),
 
-  [SET_ETH_AMOUNT]: (state, { payload }) => (
-    state.merge({
-      ethAmount: payload
-    })
-  ),
+    [OPEN_TERMS_POPUP]: (state) =>
+      state.merge({
+        termsPopupOpen: true,
+      }),
 
-  [OPEN_VERIFY_POPUP]: (state) => (
-    state.merge({
-      verifyPopupOpen: true
-    })
-  ),
+    [CLOSE_TERMS_POPUP]: (state) =>
+      state.merge({
+        termsPopupOpen: false,
+      }),
 
-  [CLOSE_VERIFY_POPUP]: (state) => (
-    state.merge({
-      verifyPopupOpen: false
-    })
-  ),
+    [OPEN_ORDER_FORM_POPUP]: (state) =>
+      state.merge({
+        orderFormPopupOpen: true,
+      }),
 
-  [verifyBuyTokens.REQUEST]: (state) => (
-    state.merge({
-      spinner: true
-    })
-  ),
+    [CLOSE_ORDER_FORM_POPUP]: (state) =>
+      state.merge({
+        orderFormPopupOpen: false,
+      }),
 
-  [verifyBuyTokens.SUCCESS]: (state) => (
-    state.merge({
-      spinner: false,
-      verifyPopupOpen: false
-    })
-  ),
+    [SET_ETH_AMOUNT]: (state, { payload }) =>
+      state.merge({
+        ethAmount: payload,
+      }),
 
-  [verifyBuyTokens.FAILURE]: (state) => (
-    state.merge({
-      spinner: false
-    })
-  ),
+    [OPEN_VERIFY_POPUP]: (state) =>
+      state.merge({
+        verifyPopupOpen: true,
+      }),
 
-  [RESET_STORE]: (state) => (
-    state.merge(initialState)
-  )
-}, initialState);
+    [CLOSE_VERIFY_POPUP]: (state) =>
+      state.merge({
+        verifyPopupOpen: false,
+      }),
+
+    [verifyBuyTokens.REQUEST]: (state) =>
+      state.merge({
+        spinner: true,
+      }),
+
+    [verifyBuyTokens.SUCCESS]: (state) =>
+      state.merge({
+        spinner: false,
+        verifyPopupOpen: false,
+      }),
+
+    [verifyBuyTokens.FAILURE]: (state) =>
+      state.merge({
+        spinner: false,
+      }),
+
+    [RESET_STORE]: (state) => state.merge(initialState),
+  },
+  initialState
+);
