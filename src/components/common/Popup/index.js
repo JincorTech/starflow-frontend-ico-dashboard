@@ -29,20 +29,29 @@ class Popup extends Component {
       title,
       children,
       open,
-      close
+      close,
+      className,
+      hideCloseButton,
     } = this.props;
 
     const renderPopup = () => (
       <div className={s.background} onClick={this._handleBackdropClick}>
-        <div className={s.popup} ref={(popup) => { this.popup = popup; }}>
+        <div
+          className={className ? s[className] : s.popup}
+          ref={(popup) => {
+            this.popup = popup;
+          }}
+        >
           {title && <div className={s.title}>{title}</div>}
           <div className={s.body}>{children}</div>
-          <div className={s.footer}>
-            <button className={s.close} type="button" onClick={() => close()}>
-              <img src={require('./images/close.svg')}/>
-              <span>Close</span>
-            </button>
-          </div>
+          {!hideCloseButton && (
+            <div className={s.footer}>
+              <button className={s.close} type="button" onClick={() => close()}>
+                <img src={require('./images/close.svg')} />
+                <span>Close</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     );

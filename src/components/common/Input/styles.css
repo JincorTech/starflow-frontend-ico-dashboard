@@ -11,7 +11,7 @@
   transition: 0.1s linear all;
 
   &:focus {
-    border: 1px solid #f52c5a;
+    border: 1px solid #fff;
   }
 
   &.large {
