@@ -12,17 +12,12 @@ const OrderForm = ({
         Order Date:
         {date}
       </p>
-      <p>Order Number: {'001' /* FIXME: Internal sequential number */}</p>
       <p>
         Seller: STARFLOW TECHNOLOGY PTE. LTD. (Company Registration No.
         201804853K), a Singapore company with its registered office address at
         101 Upper Cross Street, #05-16, Singapore 058357 (“Starflow”)
       </p>
-      <p>
-        Buyer: {user.name} ({'[NRIC or passport number]' /* FIXME */}), a{' '}
-        {'[country]' /* FIXME */} citizen residing at{' '}
-        {'[full residential address]' /* FIXME */}
-      </p>
+      <p>Buyer: {user.name}</p>
       <p>
         1. Buyer agrees to purchase the following STAR Tokens in accordance with
         the STAR Token Sale Terms and Conditions (the “Terms”):
@@ -64,18 +59,7 @@ const OrderForm = ({
         Terms have been accepted by:
       </p>
       <p>{user.name} </p>
-      <p>
-        {
-          '[insert signature hash or other digital representation of the online signature]' /* FIXME */
-        }
-      </p>
       <p>{date}</p>
-      <p>{'[insert geolocation information if available]' /* FIXME */}</p>
-      <p>
-        {
-          '[insert any other relevant information from the online acceptance process]' /* FIXME */
-        }
-      </p>
     </div>
   );
 };
