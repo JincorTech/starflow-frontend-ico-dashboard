@@ -2,16 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const OrderForm = ({
-  user, rate, ethAmount, jcr
+  user, rate, ethAmount, eth
 }) => {
   const date = new Date().toLocaleString();
   return (
     <div>
       <h2>ORDER FOR STAR TOKENS</h2>
-      <p>
-        Order Date:
-        {date}
-      </p>
+      <p>Order Date: {date}</p>
       <p>
         Seller: STARFLOW TECHNOLOGY PTE. LTD. (Company Registration No.
         201804853K), a Singapore company with its registered office address at
@@ -33,7 +30,7 @@ const OrderForm = ({
         </thead>
         <tbody>
           <tr>
-            <td>{jcr}</td>
+            <td>{eth / rate}</td>
             <td>STAR Tokens</td>
             <td>1 ETH/ {1 / rate} STAR</td>
             <td>{ethAmount} ETH</td>
