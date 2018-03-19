@@ -84,7 +84,7 @@ const TermsAndConditions = () => (
       </p>
     </div>
 
-    <strong>Last Updated 5 March 2018</strong>
+    <strong>Last Updated 19 March 2018</strong>
 
     <h2>1. Introduction</h2>
 
@@ -168,14 +168,13 @@ const TermsAndConditions = () => (
       about the Starflow Group, the Token Sale and the Starflow Group’s overall
       project related to the Platform are available on Starflow’s website at
       https://www.starflow.com (the “<strong>Website</strong>”), including
-      Starflow’s Whitepaper version 1.11 (collectively, the “<strong>
-        Project Documentation
-      </strong>”). The Project Documentation states Starflow’s current views of
-      the subjects it covers. Starflow may from time to time revise the Project
-      Documentation in any respect and without notice to or approval from you.
-      The information presented in the Project Documentation is indicative only;
-      the Project Documentation does not form part of these Terms or represent a
-      commitment by Starflow.
+      Starflow’s Whitepaper version 1.11 (dated 6 March 2018) (collectively, the
+      “<strong>Project Documentation</strong>”). The Project Documentation
+      states Starflow’s current views of the subjects it covers. Starflow may
+      from time to time revise the Project Documentation in any respect and
+      without notice to or approval from you. The information presented in the
+      Project Documentation is indicative only; the Project Documentation does
+      not form part of these Terms or represent a commitment by Starflow.
     </p>
     <h2>
       2. Contracting Party and Eligibility to Participate in the Token Sale
@@ -311,10 +310,13 @@ const TermsAndConditions = () => (
       3.3 A technical expert engaged by Starflow (the “<strong>
         Code Auditor
       </strong>”) has audited the TS Contract. The report of the Code Auditor
-      will be available at starflow.com/ico. However, the audit is intended only
-      to enhance the performance and security of the TS Contract. Neither
-      Starflow nor the Code Auditor warrants or guarantees the operation of the
-      TS Contract. The results of the audit do not form part of these Terms.
+      will be available at{' '}
+      <a href="https://starflow.com/ico" target="_blank">
+        https://starflow.com/ico
+      </a>. However, the audit is intended only to enhance the performance and
+      security of the TS Contract. Neither Starflow nor the Code Auditor
+      warrants or guarantees the operation of the TS Contract. The results of
+      the audit do not form part of these Terms.
     </p>
     <h2>4. Tokens</h2>
     <p>
@@ -455,8 +457,8 @@ const TermsAndConditions = () => (
       (d) If Starflow has not exercised its right under clause 5.6 or clause 5.7
       (each, a “<strong>Cancellation Clause</strong>”) and you have complied
       with these Terms (including the applicable provisions in Schedule 2) then,
-      immediately after your Order is Accepted, the TS Contract will deliver the
-      quantity of Tokens specified in your Order (the “<strong>
+      within 14 days after your Order is Accepted, the TS Contract will deliver
+      the quantity of Tokens specified in your Order (the “<strong>
         Purchased Tokens
       </strong>”) to your Starflow Wallet.
     </p>
@@ -470,7 +472,7 @@ const TermsAndConditions = () => (
       transfer Purchased Tokens to it from your Starflow Wallet. You are in all
       respects solely responsible for creating and managing your External Wallet
       and for safeguarding the private keys, passwords and other credentials
-      relating to External Wallet. Starflow reserves the right to prescribe
+      relating to your External Wallet. Starflow reserves the right to prescribe
       additional requirements for your External Wallet.
     </p>
     <p>5.6 Without prejudice to clause 5.7, Starflow reserves the right to:</p>
@@ -573,7 +575,7 @@ const TermsAndConditions = () => (
     <p>
       (b) If you are entitled to a refund under clause 5.10(a), the “<strong>
         Refund Amount
-      </strong>” shall either be:
+      </strong>” shall be equal to the lesser of:
     </p>
     <p>(i) an amount in ETH equal to the Amount Paid; or</p>
     <p>
@@ -629,15 +631,54 @@ const TermsAndConditions = () => (
       5.11 If you are a party to a STAR Token Private Pre-Sale Agreement (the “<strong
       >
         Private Pre-Sale Agreement
-      </strong>”), then (a) clause 5.4 will not apply to you, (b) if Starflow
-      has not exercised its right under a Cancellation Clause, you satisfy the
-      Compliance Checks and you have complied with these Terms (including the
-      applicable provisions in Schedule 2), Starflow will cause the TS Contract
-      to deliver the Purchased Tokens to your Starflow Wallet on the Token Sale
-      End Date (as defined in paragraph 3 of Schedule 2) and (c) the following
-      terms in these Terms shall be deemed to refer to corresponding terms in
-      the Private Pre-Sale Agreement:
+      </strong>”), then (a) clause 5.4(b) to clause 5.4(d) will not apply to
+      you, (b) if Starflow has not exercised its right under a Cancellation
+      Clause, you satisfy the Compliance Checks and you have complied with these
+      Terms (including the applicable provisions in Schedule 2), Starflow will
+      cause the TS Contract to deliver the Purchased Tokens to your Starflow
+      Wallet within 14 days after the Token Sale End Date (as defined in
+      paragraph 3 of Schedule 2) and (c) the following terms in these Terms
+      shall be deemed to refer to corresponding terms in the Private Pre-Sale
+      Agreement:
     </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Term in These Terms</th>
+          <th>Term in Private Pre-Sale Agreement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sale Account</td>
+          <td>Payment Account</td>
+        </tr>
+        <tr>
+          <td>Tokens</td>
+          <td>STAR Tokens</td>
+        </tr>
+        <tr>
+          <td>Purchase Price</td>
+          <td>Purchase Price</td>
+        </tr>
+        <tr>
+          <td>Amount Paid</td>
+          <td>Amount Paid</td>
+        </tr>
+        <tr>
+          <td>Purchased Tokens</td>
+          <td>Purchased Tokens</td>
+        </tr>
+        <tr>
+          <td>Purchased Tokens</td>
+          <td>Commitment Amount</td>
+        </tr>
+        <tr>
+          <td>External Wallet</td>
+          <td>Buyer’s Wallet</td>
+        </tr>
+      </tbody>
+    </table>
     <h2>6. Your Resale of Rights and Tokens</h2>
     <p>
       6.1 You acknowledge that Starflow’s decision to enter into the transaction
@@ -967,133 +1008,132 @@ const TermsAndConditions = () => (
       expressly disclaims its liability and shall in no case be liable to you or
       any person for:
     </p>
-    <ul>
-      <li>
-        rejection or cancellation of your Order under a Cancellation Clause;
-      </li>
 
-      <li>
-        suspension or cancellation of the Token Sale (in whole or in part) under
-        clause 5.6(b);
-      </li>
+    <p>
+      (a) rejection or cancellation of your Order under a Cancellation Clause;
+    </p>
 
-      <li>
-        delay in the distribution of Tokens under clause 5.4(d) or clause
-        5.11(b);
-      </li>
+    <p>
+      (b) suspension or cancellation of the Token Sale (in whole or in part)
+      under clause 5.6(b);
+    </p>
 
-      <li>
-        suspension or cancellation of the Token Sale, rescission of your Order
-        or actual or effective destruction of the Tokens under clause 5.6(d);
-      </li>
+    <p>
+      (c) delay in the distribution of Tokens under clause 5.4(d) or clause
+      5.11(b);
+    </p>
 
-      <li>
-        blocking, termination, modification, throttling, disconnection or
-        suspension of the Token Sale (in whole or in part) under clause 5.6(f);
-      </li>
+    <p>
+      (d) suspension or cancellation of the Token Sale, rescission of your Order
+      or actual or effective destruction of the Tokens under clause 5.6(d);
+    </p>
 
-      <li>
-        failure or malfunction of, or disruption to, the operation of the
-        Platform or the TS Contract;
-      </li>
+    <p>
+      (e) blocking, termination, modification, throttling, disconnection or
+      suspension of the Token Sale (in whole or in part) under clause 5.6(f);
+    </p>
 
-      <li>delay in the refund of the Refund Amount under clause 5.10;</li>
+    <p>
+      (f) failure or malfunction of, or disruption to, the operation of the
+      Platform or the TS Contract;
+    </p>
 
-      <li>
-        any payment for Orders made to an address other than the Sale Account;
-      </li>
+    <p>(g) delay in the refund of the Refund Amount under clause 5.10;</p>
 
-      <li>
-        a hard fork, failure or malfunction of, or disruption to, the operation
-        of Ethereum, Ethereum-based software systems, blockchain technology
-        generally or other decentralised technology or systems in respect of the
-        Platform and/or the Tokens;
-      </li>
+    <p>
+      (h) any payment for Orders made to an address other than the Sale Account;
+    </p>
 
-      <li>
-        any virus, error, bug, flaw, defect or other matter adversely affecting
-        the operation, functionality, usage, storage, transmission mechanisms,
-        transferability, tradability or other material characteristics of the
-        Tokens;
-      </li>
+    <p>
+      (i) a hard fork, failure or malfunction of, or disruption to, the
+      operation of Ethereum, Ethereum-based software systems, blockchain
+      technology generally or other decentralised technology or systems in
+      respect of the Platform and/or the Tokens;
+    </p>
 
-      <li>
-        failure or delay in the listing or quotation of the Tokens on a
-        secondary digital token exchange;
-      </li>
+    <p>
+      (j) any virus, error, bug, flaw, defect or other matter adversely
+      affecting the operation, functionality, usage, storage, transmission
+      mechanisms, transferability, tradability or other material characteristics
+      of the Tokens;
+    </p>
 
-      <li>
-        decreases or volatility in traded prices or trading volume of Tokens
-        (after listing and quotation of Tokens on secondary digital token
-        exchanges, if applicable);
-      </li>
+    <p>
+      (k) failure or delay in the listing or quotation of the Tokens on a
+      secondary digital token exchange;
+    </p>
 
-      <li>
-        any delisting of the Tokens from a secondary digital token exchange;
-      </li>
+    <p>
+      (l) decreases or volatility in traded prices or trading volume of Tokens
+      (after listing and quotation of Tokens on secondary digital token
+      exchanges, if applicable);
+    </p>
 
-      <li>failure or unfitness of the Tokens for any specific purpose;</li>
+    <p>
+      (m) any delisting of the Tokens from a secondary digital token exchange;
+    </p>
 
-      <li>Starflow’s use of the proceeds of the Token Sale;</li>
+    <p>(n) failure or unfitness of the Tokens for any specific purpose;</p>
 
-      <li>
-        any failure or delay in disclosing information relating to the status of
-        the Token Sale;
-      </li>
+    <p>(o) Starflow’s use of the proceeds of the Token Sale;</p>
 
-      <li>
-        loss, destruction, theft or compromise of the private keys, passwords or
-        other credentials to the account or wallet or other token storage
-        mechanism referred to in clause 5.4;
-      </li>
+    <p>
+      (p) any failure or delay in disclosing information relating to the status
+      of the Token Sale;
+    </p>
 
-      <li>
-        any loss, cost, expense or tax associated with any transfer or secondary
-        market trading in the Tokens;
-      </li>
+    <p>
+      (q) loss, destruction, theft or compromise of the private keys, passwords
+      or other credentials to the account or wallet or other token storage
+      mechanism referred to in clause 5.5;
+    </p>
 
-      <li>
-        any prohibition, restriction or regulation by any government or
-        regulatory authority in any jurisdiction of the operation,
-        functionality, usage, storage, transmission mechanisms, transferability,
-        tradability or other material characteristics of the Tokens;
-      </li>
+    <p>
+      (r) any loss, cost, expense or tax associated with any transfer or
+      secondary market trading in the Tokens;
+    </p>
 
-      <li>
-        failure to achieve or delay in achieving the outcomes described in the
-        Project Documentation;
-      </li>
+    <p>
+      (s) any prohibition, restriction or regulation by any government or
+      regulatory authority in any jurisdiction of the operation, functionality,
+      usage, storage, transmission mechanisms, transferability, tradability or
+      other material characteristics of the Tokens;
+    </p>
 
-      <li>
-        any forward-looking statements of any nature made in connection with the
-        Token Sale, the Tokens, the Platform or otherwise;
-      </li>
+    <p>
+      (t) failure to achieve or delay in achieving the outcomes described in the
+      Project Documentation;
+    </p>
 
-      <li>
-        any liability you incur in connection with any transfer of Tokens
-        otherwise than in accordance with all applicable laws and regulations in
-        force at the time of any such transfer, including the securities laws of
-        any applicable jurisdiction;
-      </li>
+    <p>
+      (u) any forward-looking statements of any nature made in connection with
+      the Token Sale, the Tokens, the Platform or otherwise;
+    </p>
 
-      <li>
-        any risks associated with the TS Contract, the Off-Chain Documents, the
-        Website, the Token Sale Site, the Sale Account, the Starflow Group, the
-        Token Sale, the Tokens, your dealing in Tokens or your use of the
-        Platform, including the risks set out in Schedule 3; or
-      </li>
+    <p>
+      (v) any liability you incur in connection with any transfer of Tokens
+      otherwise than in accordance with all applicable laws and regulations in
+      force at the time of any such transfer, including the securities laws of
+      any applicable jurisdiction;
+    </p>
 
-      <li>
-        any delay or failure to perform any obligation under these Terms where
-        the delay or failure results from any cause beyond the Starflow Group’s
-        control, including acts of God, labour disputes or other industrial
-        disturbances, electrical, telecommunications, hardware, software or
-        other utility failures, earthquake, storms or other elements of nature,
-        blockages, embargoes, riots, acts or orders of government, acts of
-        terrorism or war, changes in blockchain technology (broadly construed)
-        and changes in the Ethereum protocols.
-      </li>
-    </ul>
+    <p>
+      (w) any risks associated with the TS Contract, the Off-Chain Documents,
+      the Website, the Token Sale Site, the Sale Account, the Starflow Group,
+      the Token Sale, the Tokens, your dealing in Tokens or your use of the
+      Platform, including the risks set out in Schedule 3; or
+    </p>
+
+    <p>
+      (x) any delay or failure to perform any obligation under these Terms where
+      the delay or failure results from any cause beyond the Starflow Group’s
+      control, including acts of God, labour disputes or other industrial
+      disturbances, electrical, telecommunications, hardware, software or other
+      utility failures, earthquake, storms or other elements of nature,
+      blockages, embargoes, riots, acts or orders of government, acts of
+      terrorism or war, changes in blockchain technology (broadly construed) and
+      changes in the Ethereum protocols.
+    </p>
 
     <p>
       11.2 To the maximum extent permitted by all applicable laws and
@@ -1210,11 +1250,11 @@ const TermsAndConditions = () => (
       Dispute Notice, either party may refer the Dispute for final resolution by
       arbitration administered by the Singapore International Arbitration Centre
       (the “<strong>SIAC</strong>”) in accordance with the Arbitration Rules of
-      the Singapore International Arbitration Centre for the time being in
-      force, which rules are deemed to be incorporated by reference in this
-      clause. The seat of arbitration will be Singapore. The arbitral tribunal
-      will consist of one arbitrator to be appointed by the SIAC President. The
-      language of the arbitration will be English.
+      the SIAC for the time being in force, which rules are deemed to be
+      incorporated by reference in this clause. The seat of arbitration will be
+      Singapore. The arbitral tribunal will consist of one arbitrator to be
+      appointed by the SIAC President. The language of the arbitration will be
+      English.
     </p>
     <h2>14. General</h2>
     <p>
@@ -1247,9 +1287,57 @@ const TermsAndConditions = () => (
     </p>
     <p>
       14.5 If you are an individual, Starflow will use any personal information
-      you provide to Starflow in accordance with the Starflow Token Sale Privacy
-      Policy ico.starflow.com/legal/privacy-policy, which are incorporated by
-      reference into these Terms.
+      you provide to Starflow only for the following purposes:
+    </p>
+    <p> (a) to register your interest in participating in the Token Sale;</p>
+    <p>
+      (b) to process and complete your Order, including to conduct Compliance
+      Checks;
+    </p>
+    <p>(c) to collect and manage the proceeds of the Token Sale;</p>
+    <p>
+      (d) to send you promotional and marketing information regarding (i) the
+      Token Sale and any future sale of Tokens and/or (ii) the Platform or other
+      Starflow Group events, products and services;
+    </p>
+    <p>
+      (e) to notify you about updates or changes to the Starflow Token Sale
+      Privacy Policy (at https://ico.starflow.com/legal/privacy-policy) or these
+      Terms, or any aspect of (i) your registration of your interest to
+      participate in the Token Sale through any channel or method, (ii) your
+      accessing or using the Token Sale Site, (iii) your communicating with the
+      Starflow Group regarding the Token Sale and/or (iv) your acceptance of
+      these Terms;
+    </p>
+    <p>(f) to respond to your communications to Starflow;</p>
+    <p>
+      (g) to detect, diagnose and fix problems affecting the Token Sale Site;
+    </p>
+    <p>(h) to personalise your experience on the Token Sale Site;</p>
+    <p>
+      (i) for internal business purposes, including research, analysis, testing
+      and auditing;
+    </p>
+    <p>
+      (j) to comply with applicable legal obligations and other rules,
+      regulations, codes of practice and orders and directions of competent
+      governmental authorities that the Starflow Group is obligated to follow;
+    </p>
+    <p>
+      (k) to prevent, detect, investigate and prosecute threats, fraud,
+      misconduct or other unlawful or malicious activity;
+    </p>
+    <p>
+      (l) to enforce the Starflow Group’s agreements and resolve disputes; and
+    </p>
+    <p>
+      (m) to protect the Starflow Group’s rights and property and the rights,
+      property and safety of others.
+    </p>
+    <p>
+      Starflow may transfer your personal information to its affiliates and
+      other unrelated third parties in and outside Singapore for processing
+      (including storage) for the above-mentioned purposes.
     </p>
     <p>14.6 Notwithstanding:</p>
     <ul>
@@ -1305,8 +1393,8 @@ const TermsAndConditions = () => (
       they are posted on the Token Sale Site.
     </p>
     <p>
-      14.11 These Terms (which include the attached Schedule 1, Schedule 2 and
-      Schedule 3 and the other documents and terms which are expressly
+      14.11 These Terms (which include the attached Order, Schedule 1, Schedule
+      2 and Schedule 3 and the other documents and terms which are expressly
       incorporated by reference herein) represent the entire agreement between
       you and Starflow and supersede any earlier oral or written agreements,
       proposals, representations, statements and understandings (including the
@@ -1449,10 +1537,10 @@ const TermsAndConditions = () => (
 
     <p>
       (ii) Formed by a U.S. person principally for the purpose of investing in
-      securities not registered under the Act, unless it is organized or
-      incorporated, and owned, by accredited investors (as defined in Rule 501
-      of Regulation D under the U.S. Securities Act) who are not natural
-      persons, estates or trusts.
+      securities not registered under the U.S. Securities Act, unless it is
+      organized or incorporated, and owned, by accredited investors (as defined
+      in Rule 501 of Regulation D under the U.S. Securities Act) who are not
+      natural persons, estates or trusts.
     </p>
     <p>
       “<strong>UNSC-sanctioned Country Person</strong>” means (a) a natural
@@ -1565,6 +1653,32 @@ const TermsAndConditions = () => (
         Token Sale End Date
       </strong>”. The price of Tokens during the Public Sale will be as follows:
     </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Date of Purchase</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Week 1</td>
+          <td>1/4200 ETH</td>
+        </tr>
+        <tr>
+          <td>Week 2</td>
+          <td>1/4025 ETH</td>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td>1/3850 ETH</td>
+        </tr>
+        <tr>
+          <td>Week 4 and after</td>
+          <td>1/3500 ETH</td>
+        </tr>
+      </tbody>
+    </table>
     <h4>4. Minimum Sale Threshold</h4>
 
     <p>
@@ -2129,8 +2243,7 @@ const TermsAndConditions = () => (
         Fluctuation in the Value of the Token Relative to a Reference Fiat
         Currency.
       </strong>
-      Payments for transactions among brands, creators and value providers and
-      payments to the Starflow Group for running campaigns on the Platform will
+      Payments for transactions among brands, creators and value providers will
       be made in Tokens. Payments from consumers to creators for content,
       services or items on the Platform will be made in ProtoStars. If a
       transaction paid in Tokens is actually priced in a reference fiat currency
@@ -2141,13 +2254,15 @@ const TermsAndConditions = () => (
       need to pay more fiat currency for ProtoStars to the extent that the value
       of Tokens declines relative to that fiat currency. In addition, the
       Starflow Group has not yet established (a) the processes for determining
-      the fees for using the Platform, (b) the processes for determining rewards
-      to be issued from the User Growth Fund or (c) whether any of those fees or
-      rewards will be denominated by reference to Tokens or to a reference fiat
-      currency. If the fees to be paid for use of the Platform or the rewards to
-      be issued from the User Growth Fund are determined by reference to a
-      reference fiat currency, then the number of Tokens needed for those
-      purposes may fluctuate with value changes to the reference fiat currency.
+      the fees payable to the Platform, if any, for transferring Tokens outside
+      the Platform (e.g., as a precursor to exchanging Tokens on a secondary
+      market), (b) the processes for determining rewards to be issued from the
+      User Growth Fund or (c) whether any of those fees or rewards will be
+      denominated by reference to Tokens or to a reference fiat currency. If the
+      transaction fees to be paid to the Platform or the rewards to be issued
+      from the User Growth Fund are determined by reference to a reference fiat
+      currency, then the number of Tokens needed for those purposes may
+      fluctuate with value changes to the reference fiat currency.
     </p>
     <p>
       <strong>Market Perception.</strong> The market price of Tokens could be
