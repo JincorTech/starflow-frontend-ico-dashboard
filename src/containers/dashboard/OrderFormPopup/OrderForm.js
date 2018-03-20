@@ -2,13 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const OrderForm = ({
-  user, rate, ethAmount, eth
+  user,
+  rate,
+  ethAmount,
+  eth,
+  ethTransactionsCount
 }) => {
   const date = new Date().toLocaleString();
   return (
     <div>
       <h2>ORDER FOR STAR TOKENS</h2>
-      <p>Order number: {user.ethAddress}</p>
+      <p>Order number: {`${user.ethAddress}-${ethTransactionsCount}`}</p>
       <p>Order Date: {date}</p>
       <p>
         Seller: STARFLOW TECHNOLOGY PTE. LTD. (Company Registration No.
@@ -66,6 +70,7 @@ export default connect((state) => ({
   user: state.app.app.user,
   rate: state.dashboard.dashboard.jcrTokenPrice.ETH,
   ethAmount: state.dashboard.buyTokens.ethAmount,
+  ethTransactionsCount: state.dashboard.buyTokens.ethTransactionsCount,
   eth: state.dashboard.buyTokens.eth,
   jcr: state.dashboard.buyTokens.jcr,
 }))(OrderForm);

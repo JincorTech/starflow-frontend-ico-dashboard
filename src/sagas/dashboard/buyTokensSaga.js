@@ -1,5 +1,6 @@
 import { all, takeLatest, call, put, fork, select } from 'redux-saga/effects';
 import { reset, SubmissionError } from 'redux-form';
+import Web3 from 'web3';
 import notify from '../../utils/notifications';
 import { post } from '../../utils/fetch';
 import { NUMBER_REGEXP } from '../../utils/validators';
@@ -61,8 +62,17 @@ const getEthAddress = (state) => state.app.app.user.ethAddress;
 function* fetchTransactionsCountIterator() {
   try {
     const ethAddress = yield select(getEthAddress);
-    console.log('!!! ETH_ADDRESS', ethAddress);
-    yield put(openOrderFormPopup.success());
+    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/pSRp9vfBPEFYKHXciMyv'));
+    const data = yield new Promise((resolve, reject) => {
+      web3.eth.getTransactionCount(ethAddress, (error, result) => {
+        if (error) {
+          reject(error);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+    yield put(openOrderFormPopup.success(data));
   } catch (e) {
     yield put(openOrderFormPopup.failure(new SubmissionError({ _error: e.error })));
   }

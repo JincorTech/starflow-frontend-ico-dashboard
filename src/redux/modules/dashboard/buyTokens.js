@@ -117,10 +117,21 @@ export default createReducer(
         termsPopupOpen: false,
       }),
 
+    [openOrderFormPopup.REQUEST]: (state) =>
+      state.merge({
+        spinner: true
+      }),
+
     [openOrderFormPopup.SUCCESS]: (state, { payload }) =>
       state.merge({
+        spinner: false,
         orderFormPopupOpen: true,
         ethTransactionsCount: payload
+      }),
+
+    [openOrderFormPopup.FAILURE]: (state) =>
+      state.merge({
+        spinner: false
       }),
 
     [CLOSE_ORDER_FORM_POPUP]: (state) =>
