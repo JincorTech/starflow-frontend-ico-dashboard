@@ -1,4 +1,4 @@
-import { all, takeLatest, call, put, fork } from 'redux-saga/effects';
+import { all, takeLatest, call, put, fork, select } from 'redux-saga/effects';
 import { reset, SubmissionError } from 'redux-form';
 import notify from '../../utils/notifications';
 import { post } from '../../utils/fetch';
@@ -9,6 +9,7 @@ import {
   setEth,
   setMnemonic,
   initiateBuyTokens,
+  openOrderFormPopup,
   verifyBuyTokens,
   resetStore
 } from '../../redux/modules/dashboard/buyTokens';
@@ -52,6 +53,29 @@ function* initiateBuyTokensSaga() {
 }
 
 /**
+ * Fetch transactions count
+ */
+
+const getEthAddress = (state) => state.app.app.user.ethAddress;
+
+function* fetchTransactionsCountIterator() {
+  try {
+    const ethAddress = yield select(getEthAddress);
+    console.log('!!! ETH_ADDRESS', ethAddress);
+    yield put(openOrderFormPopup.success());
+  } catch (e) {
+    yield put(openOrderFormPopup.failure(new SubmissionError({ _error: e.error })));
+  }
+}
+
+function* fetchTransactionsCountSaga() {
+  yield takeLatest(
+    openOrderFormPopup.REQUEST,
+    fetchTransactionsCountIterator
+  );
+}
+
+/**
  * Verify buy tokens
  */
 
@@ -82,6 +106,7 @@ export default function* () {
   yield all([
     fork(changeEthSaga),
     fork(initiateBuyTokensSaga),
-    fork(verifyBuyTokensSaga)
+    fork(verifyBuyTokensSaga),
+    fork(fetchTransactionsCountSaga)
   ]);
 }

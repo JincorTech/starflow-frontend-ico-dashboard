@@ -8,6 +8,7 @@ const OrderForm = ({
   return (
     <div>
       <h2>ORDER FOR STAR TOKENS</h2>
+      <p>Order number: {user.ethAddress}</p>
       <p>Order Date: {date}</p>
       <p>
         Seller: STARFLOW TECHNOLOGY PTE. LTD. (Company Registration No.

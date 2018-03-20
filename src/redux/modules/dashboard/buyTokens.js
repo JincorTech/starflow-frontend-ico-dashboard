@@ -2,6 +2,7 @@ import { from } from 'seamless-immutable';
 import {
   createReducer,
   createAction,
+  createAsyncAction,
   createSubmitAction,
 } from '../../../utils/actions';
 
@@ -32,7 +33,7 @@ export const openMnemonicPopup = createAction(OPEN_MNEMONIC_POPUP);
 export const closeMnemonicPopup = createAction(CLOSE_MNEMONIC_POPUP);
 export const openTermsPopup = createAction(OPEN_TERMS_POPUP);
 export const closeTermsPopup = createAction(CLOSE_TERMS_POPUP);
-export const openOrderFormPopup = createAction(OPEN_ORDER_FORM_POPUP);
+export const openOrderFormPopup = createAsyncAction(OPEN_ORDER_FORM_POPUP);
 export const closeOrderFormPopup = createAction(CLOSE_ORDER_FORM_POPUP);
 export const setMnemonic = createAction(SET_MNEMONIC);
 export const setEthAmount = createAction(SET_ETH_AMOUNT);
@@ -52,6 +53,7 @@ const initialState = from({
   orderFormPopupOpen: false,
   mnemonic: '',
   ethAmount: '',
+  ethTransactionsCount: 0,
   verification: {
     verificationId: '',
     consumer: '',
@@ -115,9 +117,10 @@ export default createReducer(
         termsPopupOpen: false,
       }),
 
-    [OPEN_ORDER_FORM_POPUP]: (state) =>
+    [openOrderFormPopup.SUCCESS]: (state, { payload }) =>
       state.merge({
         orderFormPopupOpen: true,
+        ethTransactionsCount: payload
       }),
 
     [CLOSE_ORDER_FORM_POPUP]: (state) =>
