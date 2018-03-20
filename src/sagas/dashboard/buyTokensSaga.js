@@ -1,5 +1,6 @@
-import { all, takeLatest, call, put, fork } from 'redux-saga/effects';
+import { all, takeLatest, call, put, fork, select } from 'redux-saga/effects';
 import { reset, SubmissionError } from 'redux-form';
+import Web3 from 'web3';
 import notify from '../../utils/notifications';
 import { post } from '../../utils/fetch';
 import { NUMBER_REGEXP } from '../../utils/validators';
@@ -9,6 +10,7 @@ import {
   setEth,
   setMnemonic,
   initiateBuyTokens,
+  openOrderFormPopup,
   verifyBuyTokens,
   resetStore
 } from '../../redux/modules/dashboard/buyTokens';
@@ -52,6 +54,38 @@ function* initiateBuyTokensSaga() {
 }
 
 /**
+ * Fetch transactions count
+ */
+
+const getEthAddress = (state) => state.app.app.user.ethAddress;
+
+function* fetchTransactionsCountIterator() {
+  try {
+    const ethAddress = yield select(getEthAddress);
+    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/vFNay2OLPVLf5yB0Xlix'));
+    const data = yield new Promise((resolve, reject) => {
+      web3.eth.getTransactionCount(ethAddress, 'pending', (error, result) => {
+        if (error) {
+          reject(error);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+    yield put(openOrderFormPopup.success(+data + 1));
+  } catch (e) {
+    yield put(openOrderFormPopup.failure(new SubmissionError({ _error: e.error })));
+  }
+}
+
+function* fetchTransactionsCountSaga() {
+  yield takeLatest(
+    openOrderFormPopup.REQUEST,
+    fetchTransactionsCountIterator
+  );
+}
+
+/**
  * Verify buy tokens
  */
 
@@ -82,6 +116,7 @@ export default function* () {
   yield all([
     fork(changeEthSaga),
     fork(initiateBuyTokensSaga),
-    fork(verifyBuyTokensSaga)
+    fork(verifyBuyTokensSaga),
+    fork(fetchTransactionsCountSaga)
   ]);
 }
