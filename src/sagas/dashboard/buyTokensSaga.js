@@ -62,9 +62,9 @@ const getEthAddress = (state) => state.app.app.user.ethAddress;
 function* fetchTransactionsCountIterator() {
   try {
     const ethAddress = yield select(getEthAddress);
-    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/pSRp9vfBPEFYKHXciMyv'));
+    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/vFNay2OLPVLf5yB0Xlix'));
     const data = yield new Promise((resolve, reject) => {
-      web3.eth.getTransactionCount(ethAddress, (error, result) => {
+      web3.eth.getTransactionCount(ethAddress, 'pending', (error, result) => {
         if (error) {
           reject(error);
         } else {
@@ -72,7 +72,7 @@ function* fetchTransactionsCountIterator() {
         }
       });
     });
-    yield put(openOrderFormPopup.success(data));
+    yield put(openOrderFormPopup.success(+data + 1));
   } catch (e) {
     yield put(openOrderFormPopup.failure(new SubmissionError({ _error: e.error })));
   }
