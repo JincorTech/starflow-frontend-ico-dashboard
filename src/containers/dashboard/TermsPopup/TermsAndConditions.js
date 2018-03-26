@@ -84,7 +84,7 @@ const TermsAndConditions = () => (
       </p>
     </div>
 
-    <strong>Last Updated 21 March 2018</strong>
+    <strong>Last Updated 23 March 2018</strong>
 
     <h2>1. Introduction</h2>
 
