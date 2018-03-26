@@ -84,7 +84,7 @@ const TermsAndConditions = () => (
       </p>
     </div>
 
-    <strong>Last Updated 19 March 2018</strong>
+    <strong>Last Updated 23 March 2018</strong>
 
     <h2>1. Introduction</h2>
 
@@ -637,9 +637,9 @@ const TermsAndConditions = () => (
       Terms (including the applicable provisions in Schedule 2), Starflow will
       cause the TS Contract to deliver the Purchased Tokens to your Starflow
       Wallet within 14 days after the Token Sale End Date (as defined in
-      paragraph 3 of Schedule 2) and (c) the following terms in these Terms
-      shall be deemed to refer to corresponding terms in the Private Pre-Sale
-      Agreement:
+      paragraph 3 of Schedule 2) and (c) the following defined terms in these
+      Terms shall be deemed to utilise the corresponding terms in the Private
+      Pre-Sale Agreement as set forth below:
     </p>
     <table>
       <thead>
@@ -1296,18 +1296,23 @@ const TermsAndConditions = () => (
     </p>
     <p>(c) to collect and manage the proceeds of the Token Sale;</p>
     <p>
-      (d) to send you promotional and marketing information regarding (i) the
-      Token Sale and any future sale of Tokens and/or (ii) the Platform or other
-      Starflow Group events, products and services;
+      (d) to contact you and send you promotional and marketing information by
+      [telephone call, SMS, fax, post and email] [Note: Please update this
+      section to include the marketing channels Starflow uses (or will use).
+      Please note that a message sent through Telegram, WhatsApp, or other
+      similar number-based messaging applications would be considered an SMS.]
+      regarding (i) the Token Sale and any future sale of Tokens and/or (ii) the
+      Platform, the Tokens or other Starflow Group events, products and
+      services;
     </p>
     <p>
       (e) to notify you about updates or changes to the Starflow Token Sale
-      Privacy Policy (at https://ico.starflow.com/legal/privacy-policy) or these
-      Terms, or any aspect of (i) your registration of your interest to
-      participate in the Token Sale through any channel or method, (ii) your
-      accessing or using the Token Sale Site, (iii) your communicating with the
-      Starflow Group regarding the Token Sale and/or (iv) your acceptance of
-      these Terms;
+      Privacy Policy (at https://ico.starflow.com/legal/privacy-policy)
+      (“Privacy Policy”) or these Terms, or any aspect of (i) your registration
+      of your interest to participate in the Token Sale through any channel or
+      method, (ii) your accessing or using the Token Sale Site, (iii) your
+      communicating with the Starflow Group regarding the Token Sale and/or (iv)
+      your acceptance of these Terms;
     </p>
     <p>(f) to respond to your communications to Starflow;</p>
     <p>
@@ -1339,6 +1344,7 @@ const TermsAndConditions = () => (
       other unrelated third parties in and outside Singapore for processing
       (including storage) for the above-mentioned purposes.
     </p>
+    <p>The Privacy Policy is incorporated by reference into these Terms.</p>
     <p>14.6 Notwithstanding:</p>
     <ul>
       <li>any distribution of Tokens to you;</li>
@@ -1403,8 +1409,9 @@ const TermsAndConditions = () => (
       expressly included in these Terms will be deemed to apply.
     </p>
     <p>
-      14.12 If there is a conflict between these Terms and the Order, the
-      provisions of these Terms shall prevail over the provisions of the Order.
+      14.12 If there is a conflict between these Terms (excluding the Order) and
+      the Order, the provisions of these Terms shall prevail over the provisions
+      of the Order.
     </p>
     <p>
       14.13 Any Dispute is personal to you and Starflow and will not be brought

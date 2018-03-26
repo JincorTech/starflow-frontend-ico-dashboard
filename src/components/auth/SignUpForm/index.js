@@ -8,7 +8,7 @@ import {
   emailValidate,
   passwordValidate,
   fullNameValidate,
-  required
+  required,
 } from '../../../utils/validators';
 
 import RenderInput from '../../forms/RenderInput';
@@ -33,11 +33,7 @@ class SignUpForm extends Component {
 
   render() {
     const {
-      spinner,
-      handleSubmit,
-      invalid,
-      error,
-      referralCode
+      spinner, handleSubmit, invalid, error, referralCode
     } = this.props;
 
     const renderReferralField = (code) => {
@@ -48,7 +44,8 @@ class SignUpForm extends Component {
             component={RenderInput}
             name="referral"
             type="hidden"
-            disabled/>
+            disabled
+          />
         );
       }
 
@@ -58,7 +55,8 @@ class SignUpForm extends Component {
             component={RenderInput}
             name="referral"
             type="text"
-            placeholder="Referral code (optional)"/>
+            placeholder="Referral code (optional)"
+          />
         </div>
       );
     };
@@ -77,7 +75,8 @@ class SignUpForm extends Component {
               name="name"
               type="text"
               placeholder="Full name"
-              validate={fullNameValidate}/>
+              validate={fullNameValidate}
+            />
           </div>
 
           <div className={s.field}>
@@ -86,7 +85,8 @@ class SignUpForm extends Component {
               name="email"
               type="text"
               placeholder="E-mail"
-              validate={emailValidate}/>
+              validate={emailValidate}
+            />
           </div>
 
           <div className={s.field}>
@@ -95,7 +95,8 @@ class SignUpForm extends Component {
               name="password"
               type="password"
               placeholder="Password"
-              validate={passwordValidate}/>
+              validate={passwordValidate}
+            />
           </div>
 
           {renderReferralField(referralCode)}
@@ -107,15 +108,23 @@ class SignUpForm extends Component {
           <div className={s.checkbox}>
             <Field
               component={RenderCheckbox}
-              label={<span>
-                I agree with the <a href="http://starflow.com/legal/privacy-policy" target="_blank">Privacy Policy</a>
-              </span>}
+              label={
+                <span>
+                  I agree with the{' '}
+                  <a href="/legal/privacy-policy" target="_blank">
+                    Privacy Policy
+                  </a>
+                </span>
+              }
               name="agreeTos"
-              validate={required}/>
+              validate={required}
+            />
           </div>
 
           <div className={s.button}>
-            <Button type="submit" spinner={spinner} disabled={invalid}>Submit</Button>
+            <Button type="submit" spinner={spinner} disabled={invalid}>
+              Submit
+            </Button>
           </div>
         </form>
 
@@ -139,9 +148,9 @@ const FormComponent = reduxForm({
       utm_source: '',
       utm_medium: '',
       utm_campaign: '',
-      gtm: ''
-    }
-  }
+      gtm: '',
+    },
+  },
 })(SignUpForm);
 
 export default FormComponent;

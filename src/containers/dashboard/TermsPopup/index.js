@@ -9,23 +9,33 @@ import Popup from '../../../components/common/Popup';
 import RenderCheckbox from '../../../components/forms/RenderCheckbox';
 import Button from '../../../components/common/Button';
 import TermsAndConditions from './TermsAndConditions';
+import PrivacyPolicy from './PrivacyPolicy';
 
 class TermsPopup extends Component {
   constructor() {
     super();
     this.state = {
-      termsRead: false,
+      termsAndPolicyRead: false,
       termsAccepted: false,
+      policyAccepted: false,
+      agreedMarketing: false,
     };
   }
 
   handleScroll({ target }) {
     if (target.scrollHeight - target.clientHeight === target.scrollTop) {
-      this.setState({ termsRead: true });
+      this.setState({ termsAndPolicyRead: true });
     }
   }
+
   handleTermsAccepted({ target }) {
     this.setState({ termsAccepted: target.checked });
+  }
+  handlePolicyAccepted({ target }) {
+    this.setState({ policyAccepted: target.checked });
+  }
+  handleAgreeMarketing({ target }) {
+    this.setState({ agreedMarketing: target.checked });
   }
 
   render() {
@@ -48,7 +58,9 @@ class TermsPopup extends Component {
           </div>
           <div className={s.scroll} onScroll={this.handleScroll.bind(this)}>
             <TermsAndConditions />
+            <PrivacyPolicy />
           </div>
+
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -61,22 +73,67 @@ class TermsPopup extends Component {
                 component={RenderCheckbox}
                 label={
                   <span
-                    className={this.state.termsRead ? s.label : s.disabledLabel}
+                    className={
+                      this.state.termsAndPolicyRead ? s.label : s.disabledLabel
+                    }
                   >
                     I have read and understood, and agree to, the STAR Token
-                    Sale Terms and Conditions.{' '}
+                    Sale Terms and Conditions and the Starflow Token Sale
+                    Privacy Policy.{' '}
                   </span>
                 }
                 name="termsAccepted"
-                disabled={!this.state.termsRead}
+                disabled={!this.state.termsAndPolicyRead}
                 onClick={this.handleTermsAccepted.bind(this)}
+              />
+            </div>
+            <div className={s.checkbox}>
+              <Field
+                component={RenderCheckbox}
+                label={
+                  <span
+                    className={
+                      this.state.termsAndPolicyRead ? s.label : s.disabledLabel
+                    }
+                  >
+                    I agree to the collection, use, and disclosure of my
+                    personal data in accordance with the Starflow Token Sale
+                    Privacy Policy.{' '}
+                  </span>
+                }
+                name="policyAccepted"
+                disabled={!this.state.termsAndPolicyRead}
+                onClick={this.handlePolicyAccepted.bind(this)}
+              />
+            </div>
+            <div className={s.checkbox}>
+              <Field
+                component={RenderCheckbox}
+                label={
+                  <span className={s.label}>
+                    I agree to Starflow contacting me and sending me promotional
+                    and marketing information by telephone call, SMS, fax, post
+                    and email regarding (a) the Token Sale and any future sale
+                    of STAR Tokens and/or (b) the Starflow platform, STAR Tokens
+                    or other Starflow events, products and services.{' '}
+                  </span>
+                }
+                name="agreedMarketing"
+                onClick={this.handleAgreeMarketing.bind(this)}
               />
             </div>
             <div className={s.button}>
               <Button
                 type="submit"
                 bright
-                disabled={!this.state.termsRead || !this.state.termsAccepted}
+                disabled={
+                  !(
+                    this.state.termsAndPolicyRead &&
+                    this.state.termsAccepted &&
+                    this.state.policyAccepted &&
+                    this.state.agreedMarketing
+                  )
+                }
               >
                 Continue
               </Button>

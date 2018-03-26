@@ -45,6 +45,7 @@
     "i18next-browser-languagedetector": "^2.0.0",
     "i18next-xhr-backend": "^1.4.3",
     "jwt-decode": "^2.2.0",
+    "ncp": "^2.0.0",
     "object-assign": "4.1.0",
     "react": "16.0.0",
     "react-copy-to-clipboard": "^5.0.1",
